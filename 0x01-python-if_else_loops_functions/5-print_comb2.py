@@ -6,4 +6,4 @@ for no in range(100):
     if no == 99:
         print("{}".format(no))
         break
-    print("{}, ".format(no), end='')
+    print("{:02d}, ".format(no), end='')
