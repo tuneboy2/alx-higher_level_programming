@@ -1,11 +1,12 @@
 #!/usr/bin/python3
+# Author - Oladapo Olatunbosun
+
+""" Prints the last digit of the number stored in the variable number """
 import random
 number = random.randint(-10000, 10000)
+no = abs(number) % 10
 if number < 0:
-    no = -number % 10
     no = -no
-else:
-    no = number % 10
 
 if no > 5:
     print(f"Last digit of {number} is {no} and is greater than 5")
