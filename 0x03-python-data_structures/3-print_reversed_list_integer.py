@@ -3,6 +3,9 @@
 def print_reversed_list_integer(my_list=[]):
     '''Prints all integers of a list in reverse mode one integer per line'''
 
+    if my_list == None:
+        return
+
     j = len(my_list)
     list_cpy = my_list[:]
 
