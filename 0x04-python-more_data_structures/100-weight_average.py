@@ -4,6 +4,9 @@ def weight_average(my_list=[]):
 
         Returns 0 if the list is empty
     '''
+    if not my_list:
+        return 0
+
     numerator = 0
     denominator = 0
 
