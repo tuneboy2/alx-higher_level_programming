@@ -4,4 +4,4 @@ if __name__ == "__main__":
     name = dir(hidden_4)
     for cur in name:
         if cur[:2] != "__":
-            print (cur)
+            print(cur)
