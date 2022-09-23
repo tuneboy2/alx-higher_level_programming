@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+# Author - Oladapo Olatunbosun
+
 def remove_char_at(st, n):
     string = st[:]
     string = list(string)
@@ -8,3 +10,11 @@ def remove_char_at(st, n):
         string[n] = ""
         string = ''.join(string)
     return string
+
+# Author - bamidele Adefolaju
+"""
+def remove_char_at(str, n):
+    if n < 0:
+        return (str)
+    return (str[:n] + str[n+1:])
+    """
