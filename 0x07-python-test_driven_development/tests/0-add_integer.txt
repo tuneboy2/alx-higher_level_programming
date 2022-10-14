@@ -1,0 +1,94 @@
+============================
+How to Use 0-add_integer.py
+============================
+
+This module defines an integer addition function ``add_integer(a, b=98)``.
+
+Usage:
+======
+
+``add_integer(...)`` returns the addition of its two arguments. 
+For numbers, the equivalent is the use of the operator "+" on two operands.
+
+Numbers
+========
+	Arguments of Two Integers
+	
+	>>> add_integer = __import__('0-add_integer').add_integer
+	>>> add_integer(5,5)
+	10
+
+  ::
+	Arguments containing a Negative Integer
+
+	>>> add_integer(0, -1)
+	-1
+
+	>>> add_integer(-2, -1)
+	-3
+
+  ::
+	Arguments of Two Floating Numbers
+	--------------------------------------
+	Note: Floats are casted into Integers
+	--------------------------------------
+	
+	>>> add_integer(2.0, 5.0)
+	7
+
+	>>> add_integer(3.4, 0.6)
+	3
+
+	>>> add_integer(-3.2, -1.0)
+	-4
+
+	>>> add_integer(5, -1.4)
+	4
+
+  ::
+	Only one argument, as argument ``b`` has a default of 98
+
+	>>> add_integer(2)
+	100
+
+	>>> add_integer(-2)
+	96
+
+	>>> add_integer(5.0)
+	103
+
+	>>> add_integer(-2.0)
+	96
+
+Non-numbers
+===========
+``add_integer(...)`` returns the sum of its arguments.
+It accepts arguments of type and int and floats only.
+If type is non-int or non-float, raise a TypeError
+
+ ::
+	Arguments containing a string
+
+	>>> add_integer("hello", 6)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+	>>> add_integer(6, "hello")
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+	>>> add_integer("hello")
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+-------------------------------------------
+
+If arguments are both of non-int or non-float:
+It raises a TypeError for the first argument
+
+  ::
+ 	Arguments containing strings only
+
+	>>> add_integer("hello", "world")
+	Traceback (most recent call last):
+	TypeError: a must be an integer
