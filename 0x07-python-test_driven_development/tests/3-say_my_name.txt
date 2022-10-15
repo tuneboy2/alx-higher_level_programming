@@ -1,0 +1,58 @@
+===========================
+How to use 3-say_my_name.py
+========≠==================
+
+``3-say_my_name(first_name, last_name="")`` prints My name is <first_name> <last_name> to standard output.
+
+Type String
+============
+
+	Arguments are both of type string
+
+	>>> say_my_name = __import__("3-say_my_name").say_my_name
+	>>> say_my_name("John", "Ade")
+	My name is John Ade
+
+  ::
+	If only one argument is passed, First_name takes that argument
+	as last_name has  a default value of ""
+
+	>>> say_my_name("Ade")
+	My name is Ade 
+
+Type Non-string
+===============
+
+	first_name parameter is not of type string
+
+	>>> say_my_name(1, "Ade")
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
+
+  ::
+	last_name parameter is not of type string
+
+	>>> say_my_name("Ade", 2)
+	Traceback (most recent call last):
+	TypeError: last_name must be a string
+
+  :: 
+	if one non-string argument is passed
+
+	>>> say_my_name(2)
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
+
+  :: 
+	if one argument is of type None
+	>>> say_my_name("Ade", None)
+	Traceback (most recent call last):
+	TypeError: last_name must be a string
+
+	>>> say_my_name(None, "Ade")
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
+
+	>>> say_my_name(None)
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
