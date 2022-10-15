@@ -1,0 +1,41 @@
+================================
+How to use 5-text_indentation.py
+================================
+
+``5-text_indentation(text)`` prints the text indented after specific characters: '.', ':', '?'
+
+Strings
+=======
+	Argument is of type str
+
+	>>> text_indentation = __import__("5-text_indentation").text_indentation
+	>>> text_indentation("Ade is a boy. We love you: Do you love us too? Thanks")
+	Ade is a boy.
+	<BLANKLINE>
+	We love you:
+	<BLANKLINE>
+	Do you love us too?
+	<BLANKLINE>
+	Thanks
+
+  ::
+	Argument is not of type str
+
+	>>> text_indentation(500)
+	Traceback (most recent call last):
+	TypeError: text must be a string
+
+	>>> text_indentation(None)
+	Traceback (most recent call last):
+	TypeError: text must be a string
+
+  :: 
+	No argument is passed
+	
+	>>> text_indentation() # doctest: +IGNORE_EXCEPTION_DETAIL
+	Traceback (most recent call last):
+	TypeError:
+
+	>>> text_indentation(None)
+	Traceback (most recent call last):
+	TypeError: text must be a string
