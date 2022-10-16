@@ -92,3 +92,19 @@ It raises a TypeError for the first argument
 	>>> add_integer("hello", "world")
 	Traceback (most recent call last):
 	TypeError: a must be an integer
+
+Others
+======
+
+	The function will fail with Nan is passed
+
+	>>> add_integer(2, float('nan'))
+	Traceback (most recent call last):
+	ValueError: cannot convert float NaN to integer
+
+  ::
+	Also, if infinity number is passed
+	
+	>>> add_integer(2, float('inf'))
+	Traceback (most recent call last):
+	OverflowError: cannot convert float infinity to integer
