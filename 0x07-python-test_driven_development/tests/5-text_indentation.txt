@@ -9,7 +9,7 @@ Strings
 	Argument is of type str
 
 	>>> text_indentation = __import__("5-text_indentation").text_indentation
-	>>> text_indentation("Ade is a boy. We love you: Do you love us too? Thanks")
+	>>> text_indentation("Ade is a boy. We love you: Do you love us too?   Thanks")
 	Ade is a boy.
 	<BLANKLINE>
 	We love you:
