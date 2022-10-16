@@ -22,7 +22,7 @@ def text_indentation(text):
         if text[i] in ['.', '?', ':']:
             print(text[i])
             print()
-            
+
             for num in range(i + 1, no):
                 if text[num] not in [' ', '\n']:
                     break
