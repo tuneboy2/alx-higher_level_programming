@@ -4,7 +4,7 @@
 
 class Rectangle:
     """ defines the representation for a rectangle """
-    def __init__(self, height=0, width=0):
+    def __init__(self, width=0, height=0):
         self.height = height
         self.width = width
 
