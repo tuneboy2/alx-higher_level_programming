@@ -5,7 +5,7 @@ my_rectangle = Rectangle(2,4)
 print(my_rectangle.__dict__)
 
 my_rectangle.width = 10
-my_rectangle.height = 3
+my_rectangle.height = "f"
 print(my_rectangle.__dict__)
 
 print("{}".format(my_rectangle.height))
