@@ -33,3 +33,24 @@ class Rectangle:
             raise ValueError("height must be >= 0")
 
         self.__height = value
+
+    def area(self):
+        return self.__height * self.__width
+
+    def perimeter(self):
+        if self.__height == 0 or self.__width == 0:
+            return 0
+        return (self.__height + self.__width) * 2
+
+    def __str__(self):
+        if self.__height == 0 or self.__width == 0:
+            return ""
+
+        rect = []
+        for no in range(self.__height):
+            for num in range(self.width):
+                rect.append("#")
+            if no != self.__height - 1:
+                rect.append("\n")
+
+        return "".join(rect)
