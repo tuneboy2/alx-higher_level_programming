@@ -79,5 +79,5 @@ class Rectangle:
 
     def __repr__(self):
         """ returns the string representation of the object code """
-        rec = "Rectangle(" + str(self.__width) + "," + str(self.__height) + ")"
-        return rec
+        rt = "Rectangle(" + str(self.__width) + ", " + str(self.__height) + ")"
+        return rt
