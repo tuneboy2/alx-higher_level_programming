@@ -8,4 +8,5 @@ class MyList(list):
         """ prints the list in a sorted ascending order"""
         new = self.copy()
         new.sort()
+        print(new)
         return new
