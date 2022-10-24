@@ -67,3 +67,11 @@ Empty List
 	>>> mylist = MyList()
 	>>> mylist.print_sorted()
 	[]
+
+----------
+
+	>>> mylist = MyList()
+	>>> mylist.append(5)
+	>>> new = mylist.print_sorted()
+	>>> print(new)
+	[5]
