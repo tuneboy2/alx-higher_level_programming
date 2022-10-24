@@ -37,3 +37,7 @@ Appending Negative Integers:.
 Print Sorted List:
 	>>> mylist.printed_sorted()
 	[-9, -4, -2]
+	>>> mylist.append(NaN)
+	Traceback (most recent call last):
+	NameError: name 'NaN' is not defined
+
