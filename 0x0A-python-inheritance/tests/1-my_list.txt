@@ -59,3 +59,11 @@ Print Sorted List:
 	>>> mylist.print_sorted()
 	[-5, -3, -1, 0, 1, 2, 6]
 
+
+==========
+Empty List
+==========
+
+	>>> mylist = MyList()
+	>>> mylist.print_sorted()
+	[]
