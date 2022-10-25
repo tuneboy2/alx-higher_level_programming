@@ -55,3 +55,17 @@ NaN
 	>>> bg.integer_validator("age", None)
 	Traceback (most recent call last):
 	TypeError: age must be an integer
+
+  ::
+
+	>>> bg.integer_validator("age") # doctest: +IGNORE_EXCEPTION_DETAIL
+	Traceback (most recent call last):
+	TypeError: 
+
+  ::
+
+	>>> bg.integer_validator() # doctest: +IGNORE_EXCEPTION_DETAIL
+	Traceback (most recent call last):
+	TypeError:
+
+
