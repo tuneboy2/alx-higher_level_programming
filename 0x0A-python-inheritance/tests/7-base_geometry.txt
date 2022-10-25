@@ -3,7 +3,16 @@ Interactive Testing for 7-base_geometry.py
 
 7-base_geometry.py defines a Class `BaseGeometry` and methods `area` and `integer validator`.
 
+def area(self): This method raises an Exception
+
+	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+	>>> bg = BaseGeometry()
+	>>> bg.area()
+	Traceback (most recent call last):
+	Exception: area() is not implemented
+
 def integer_validator(self, name, value): This method validates the value passed to it.
+
 
 Numbers
 =======
@@ -49,8 +58,37 @@ Floats
 	Traceback (most recent call last):
 	TypeError: age must be an integer
 
+Tuple
+-----
+
+	>>> bg.integer_validator("age", (2,3))
+	Traceback (most recent call last):
+	TypeError: age must be an integer
+
+Dictionary
+----------
+
+	>>> bg.integer_validator("age", {2,3})
+	Traceback (most recent call last):
+	TypeError: age must be an integer
+
+List
+----
+
+	>>> bg.integer_validator("age", [3])
+	Traceback (most recent call last):
+	TypeError: age must be an integer
+
+Bool
+----
+
+	>>> bg.integer_validation("age", True) # doctest: +IGNORE_EXCEPTION_DETAIL
+	Traceback (most recent call last):
+	AttributeError:
+	
 NaN
 ---
+Type Nome;
 
 	>>> bg.integer_validator("age", None)
 	Traceback (most recent call last):
@@ -58,14 +96,17 @@ NaN
 
   ::
 
+Only one argument is passed:
+
 	>>> bg.integer_validator("age") # doctest: +IGNORE_EXCEPTION_DETAIL
 	Traceback (most recent call last):
 	TypeError: 
 
   ::
 
+No argument is passed:
+
 	>>> bg.integer_validator() # doctest: +IGNORE_EXCEPTION_DETAIL
 	Traceback (most recent call last):
 	TypeError:
-
 
