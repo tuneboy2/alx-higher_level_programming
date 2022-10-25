@@ -1,0 +1,57 @@
+Interactive Testing for 7-base_geometry.py
+==========================================
+
+7-base_geometry.py defines a Class `BaseGeometry` and methods `area` and `integer validator`.
+
+def integer_validator(self, name, value): This method validates the value passed to it.
+
+Numbers
+=======
+
+	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+	>>> bg = BaseGeometry()
+
+Integers
+--------
+
+	>>> bg.integer_validator("name", 2)
+	>>> bg.integer_validator("age", 500)
+
+Negative Integers
+-----------------
+
+	>>> bg.integer_validator("name", -3)
+	Traceback (most recent call last):
+	ValueError: name must be greater than zero
+
+Zero
+----
+
+	>>> bg.integer_validator("age", 0)
+	Traceback (most recent call last):
+	ValueError: age must be greater than zero
+
+===========
+Non-Numbers
+===========
+
+Strings
+-------
+
+	>>> bg.integer_validator("name", "house")
+	Traceback (most recent call last):
+	TypeError: name must be an integer
+
+Floats
+------
+
+	>>> bg.integer_validator("age", 7.3)
+	Traceback (most recent call last):
+	TypeError: age must be an integer
+
+NaN
+---
+
+	>>> bg.integer_validator("age", None)
+	Traceback (most recent call last):
+	TypeError: age must be an integer
