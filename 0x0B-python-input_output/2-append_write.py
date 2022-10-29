@@ -3,7 +3,7 @@
 
 
 def append_write(filename="", text=""):
-    """ Appends a Text to a File, It creates a new file if filename does not exist
+    """ Appends a Text to a File, creates a new file if filename does not exist
 
     Args:
         filenane (str): The nane of the File
